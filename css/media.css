@@ -1,0 +1,255 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 959px;
+    }
+
+    /*header*/
+    .header-inner {
+        min-height: 122px;
+        justify-content: flex-end;
+    }
+    .nav {
+        display: none;
+    }
+    .header-logo {
+        width: 80px;
+        height: 48px;
+        position: absolute;
+        left: 50%;
+        margin-left: -40px;
+    }
+    /*burger icon*/
+    .burger-icon {
+        border: none;
+        background: none;
+        width: 48px;
+        height: 31px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .burger-icon::before,
+    .burger-icon::after  {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 5px;
+        background: #000;
+    }  
+    .burger-icon-inner {
+        display: block;
+        width: 48px;
+        height: 5px;
+        background: #000;
+    }
+    /*menu open*/
+    .header.menu-open {
+        position: absolute;
+        width: 100%;
+    } 
+    .menu-open .header-inner{
+        background: #000;
+        min-height: 316px;
+        position: relative;
+        align-items: flex-start;
+        z-index: 5;
+    }
+    .menu-open .header-logo-icon path {
+        fill: #fff;
+    }
+    .menu-open .burger-icon {
+        position: absolute;
+        top: 48px;
+    }
+    .menu-open .header-logo {
+        top: 48px;
+    }
+    .menu-open .burger-icon::before {
+        transform: rotate(45deg);
+        transform-origin: 0 -13px;
+        background: #fff;
+        position: relative;
+        left: 17px;
+    }
+    .menu-open .burger-icon::after {
+        transform: rotate(-45deg);
+        transform-origin: 0 12px;
+        position: relative;
+        left: 13px;
+        background: #fff;
+    }
+    .menu-open .burger-icon-inner {
+        
+        display: none;
+    }
+    .header.menu-open .nav  {
+        display: flex;
+        position: absolute;
+        left: 288px;
+        top: 176px;
+        width: 424px;
+    }
+
+    .menu-open .nav-link {
+       min-height: 122px;
+       font-size: 24px;
+       line-height: 1.2;
+       color: #fff;
+    }
+    .menu-open .nav-item:not(:last-child) {
+       margin-right: 67px;
+    }
+    /*main*/
+   .menu-open+.main-content {
+       padding-top: 122px;
+   }
+    .article {
+        min-height: 160px;
+        margin: 24px 0 0;
+        font-size: 20px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .about-history {
+        display: block;
+        margin: 32px auto 32px;
+    }
+    .text-about-history {
+        height: 214px;
+        width: 100%;
+    }
+    .next {
+        height: 258px;
+        margin-top: 32px;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+
+    .container {
+        max-width: 375px;
+    }
+    /*header*/
+    .header-logo {
+        display: none;
+    }
+    .burger-icon {
+        position: relative;
+        top: -26px;
+        left: 1px;
+        z-index: 3;
+    }
+    .burger-icon-inner,
+    .burger-icon::before,
+    .burger-icon::after {
+        background: #fff;
+    }
+    .header.menu-open {
+        min-height: 322px;
+        background: #000;
+        position: absolute;
+    }
+    .menu-open .header-inner {
+        height: 332px;
+        padding: 0;
+    }
+    .menu-open .burger-icon {
+        position: absolute;
+        left: 315px;
+        top: 40px;
+    }
+    .header.menu-open .nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20px;
+        top: 120px;
+    }
+    .menu-open .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+    }
+    .menu-open .nav-item:not(:last-child){
+       margin-bottom: 48px;
+    }
+
+    
+    .menu-open .nav-link {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .header.menu-open .header-logo {
+        display: block;
+        left: 60px;
+        top: 30px;
+    }
+    /*main*/
+    
+    .main-content {
+        position: relative;
+        top: -122px;
+    }
+    .photo {
+        padding: 0;
+    }
+    .article {
+        margin-top: 42px;
+        font-size: 18px;
+        line-height: 1.222;
+    }
+    .title {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+    .about-history {
+        margin-top: 24px;    
+    }
+    .text-about-history {
+        font-size: 16px;
+        line-height: 1.25;
+        min-height: 276px;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+    }
+    .history-date {
+        font-size: 24px;
+        display: block;
+    }
+    .next {
+        height: 356px;
+    }
+
+    /*footer*/
+    .textarea-container {
+        margin-top: 32px;
+    }
+    .textarea {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-top: 32px;
+    }
+    .textarea::placeholder {
+        position: relative;
+        top: -30px;
+        align-items: center;
+    }
+    .button-submit {
+        left: 0;
+        top: 19px;
+        text-decoration: none;
+        width: 100%;
+        font-size: 24px;  
+        position: relative; 
+    }
+}
