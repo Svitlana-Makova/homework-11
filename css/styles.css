@@ -98,7 +98,8 @@ width: 100%;
 .history-date {
   font-size: 48px;
   line-height: 1.2;
-  display: contents;  
+  display: contents;
+  min-width: 50px;  
 }
 .text-about-history {
   width: 500px;
