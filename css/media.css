@@ -118,6 +118,7 @@
     .text-about-history {
         height: 214px;
         width: 100%;
+        padding: 48px;
     }
     .next {
         height: 258px;
@@ -214,8 +215,6 @@
         font-size: 16px;
         line-height: 1.25;
         min-height: 276px;
-        flex-direction: column;
-        align-items: start;
         padding: 20px;
     }
     .history-date {

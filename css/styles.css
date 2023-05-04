@@ -92,27 +92,27 @@ width: 100%;
   display: flex;
   margin: 60px auto ;
 }
-.about-history :first-child {
+.about-history :not(:last-child) {
   margin-right: 28px;
 }
 .history-date {
   font-size: 48px;
-  line-height: 1.2;
-  display: contents;
-  min-width: 40px;  
+  line-height: 1.2; 
+  display: inline-block;
+  min-width: 110px;
 }
 .text-about-history {
   width: 500px;
   height: 394px;
   background-color: #000;
   color: #fff;
-  padding: 0 50px;
-  display: flex;
-  align-items: center;
+  padding: 90px 50px;
   font-size: 18px;
   line-height: 1.222;
 }
-
+.next {
+  padding: 45px 50px;
+}
 .textarea-container {
   position: relative;
   margin-top: 47px;
