@@ -145,8 +145,8 @@
     }
     .burger-icon {
         position: relative;
-        top: -26px;
-        left: 1px;
+        bottom: 23px;
+        left: 12px;
         z-index: 3;
     }
     .burger-icon-inner,
