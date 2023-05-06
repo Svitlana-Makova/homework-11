@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
 }
-
 ul {
   list-style: none;
 }
@@ -59,22 +57,16 @@ ul {
 }
 /*main*/
 
-.main-content {
-  position: relative;
-  z-index: 1;
-}
-.slick-dots li button {
-  display: 30px;
-  height: 30px;
-}
 .main-photo {
 width: 100%;
 }
-.article {
-  min-height: 204px;
+.slick-dots li button:before {
+  font-size: 30px;
+}
+.main-article {
   margin: 42px 0;
   font-size: 28px;
-  display: flex;
+  line-height: 1.214;
   text-align: center;
 }
 .title {
@@ -88,11 +80,19 @@ width: 100%;
   line-height: 1.225;
   text-transform: uppercase;
 }
+.about-history-wrap {
+  display: flex;
+}
 .about-history {
   display: flex;
-  margin: 60px auto ;
+  margin: 60px 0;
+  width: 500px;
+  height: 394px;
+  background: #000;
+  align-items: center;
+  padding: 0 50px;
 }
-.about-history :not(:last-child) {
+.about-history:first-child {
   margin-right: 28px;
 }
 .history-date {
@@ -102,26 +102,18 @@ width: 100%;
   min-width: 111px;
 }
 .text-about-history {
-  width: 500px;
-  height: 394px;
-  background-color: #000;
   color: #fff;
-  padding: 90px 50px;
   font-size: 18px;
   line-height: 1.222;
 }
-.next {
-  padding: 45px 50px;
-}
 .textarea-container {
   position: relative;
-  margin-top: 47px;
+  margin: 47px 0 100px;
 }
-
 .textarea {
   height: 120px;
   resize: none;
-  padding: 0 240px 0 31px;
+  padding: 3px 240px 3px 31px;
   outline: none;
   width: 100%;
   font-size: 20px;
